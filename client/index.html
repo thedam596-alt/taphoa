@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    
+    <!-- PWA Primary Color -->
+    <meta name="theme-color" content="#15803d" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- Apple iOS Safari Specific Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Mai Cua" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- Apple Touch Icons (iPhone Home Screen) -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+    
+    <!-- PWA Manifests -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+
+    <title>Mai Cua - Tạp Hóa Bán Hàng</title>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased font-sans select-none overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Register Service Worker for PWA
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('✓ PWA Service Worker Registered [Mai Cua]:', reg.scope))
+            .catch(err => console.log('SW registration note:', err));
+        });
+      }
+    </script>
+  </body>
+</html>

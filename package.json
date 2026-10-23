@@ -1,0 +1,31 @@
+{
+  "name": "tap-hoa-mai-cua",
+  "version": "1.0.0",
+  "description": "Ứng dụng quản lý bán hàng tạp hóa Mai Cua",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js",
+    "test": "node server/tests/api.test.js",
+    "build": "cmd /c \"cd client && npm run build\"",
+    "client:dev": "cmd /c \"cd client && npm run dev\""
+  },
+  "keywords": [
+    "pos",
+    "grocery",
+    "tap-hoa-mai-cua"
+  ],
+  "author": "Mai Cua Team",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "archiver": "^8.0.0",
+    "cloudflared": "^0.7.3",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "isomorphic-git": "^1.44.3",
+    "localtunnel": "^2.0.2",
+    "multer": "^2.5.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}

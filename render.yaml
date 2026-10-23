@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: taphoa-maicua
+    env: node
+    plan: free
+    buildCommand: cd client && npm install && npm run build && cd .. && npm install
+    startCommand: node server/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    disk:
+      name: maicua-data
+      mountPath: /data
+      sizeGB: 1

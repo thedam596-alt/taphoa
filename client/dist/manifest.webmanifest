@@ -1,0 +1,68 @@
+{
+  "id": "com.maicua.pos",
+  "name": "Tạp hóa Mai Cua",
+  "short_name": "Mai Cua",
+  "description": "Phần mềm quản lý bán hàng & tính tiền Tạp Hóa Mai Cua",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "window-controls-overlay"],
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#15803d",
+  "categories": ["business", "finance", "shopping", "productivity"],
+  "lang": "vi",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Bán hàng nhanh",
+      "short_name": "Bán hàng",
+      "description": "Mở màn hình tính tiền và giỏ hàng",
+      "url": "/?tab=pos",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Quét mã vạch",
+      "short_name": "Quét mã",
+      "description": "Bật camera quét mã vạch sản phẩm",
+      "url": "/?scan=true",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
